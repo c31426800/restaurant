@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-weight: 700;
+
+
+        }
+
+        .bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0.75)), url('./img/a994cb89-8bd9-4d3d-9825-50dc552287cb.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.9;
+        }
+
+        .top {
+            /* background-color: rgb(148, 96, 96);  */
+            width: 100%;
+            height: 5%;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            /* position: relative; */
+
+
+
+        }
+        .no2:hover{
+            cursor: pointer;
+        }
+        .no3:hover{
+            cursor: pointer;
+        }
+        .no2::after {
+            content: '';
+            height: 1px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+
+
+            left: 1;
+            bottom: 28px;
+            transition: 0.2s;
+
+
+        }
+
+        .no3::after {
+            content: '';
+            height: 1px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+
+            transition: 0.2s;
+
+            left: 1;
+            bottom: 28px;
+
+
+        }
+
+        .no2:hover::after {
+            width: 65%;
+
+        }
+
+        .no3:hover::after {
+            width: 65%;
+
+
+        }
+
+        .no1 {
+
+            margin-left: 150px;
+            width: 100px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* background-color: rgb(105, 105, 139); */
+        }
+
+        .no2 {
+            margin-left: 800px;
+            width: 100px;
+            height: 90px;
+            /* background-color: rgb(105, 105, 139); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+
+
+        }
+
+        .no3 {
+            width: 100px;
+            height: 90px;
+            /* background-color: rgb(105, 105, 139); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+        }
+
+        .text {
+            color: rgb(246, 247, 247);
+            font-size: 20px;
+        }
+
+        .top2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            align-items: center;
+            width: 100%;
+            height: 750px;
+        }
+
+        .title {
+            color: rgb(247, 248, 248);
+            font-size: 60px;
+        }
+
+        .wel {
+            display: flex;
+            width: 490px;
+
+        }
+
+        .text-1 {
+            color: aliceblue;
+            font-size: 20px;
+            /* background-color: rgb(40, 14, 88); */
+
+            margin-left: 62px;
+            width: 150px;
+            height: 40px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: green 2px solid;
+
+
+        }
+
+        .text-1:hover {
+            background-color: rgb(80, 13, 66);
+            transition: 0.5s;
+            border: none;
+
+        }
+
+        .ptext {
+            color: aliceblue;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .sp {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1320px) {
+            .no2 {
+                margin-left: 34%;
+            }
+            .title{text-align: center;}
+            .text{text-align: center;}
+
+        }
+
+        @media (max-width: 800px) {
+            .no2 {
+                margin-left: 3%;
+            }
+
+            .no1 {
+                margin-left: 0px;
+
+            }}
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="top">
+
+            <ul class="cc">
+                <li class="no1 text"><span class="sp">!Nt9ri</span></li>
+                <li class="no2 text"><span>Home</span></li>
+                <li class="no3 text"><span>Home</span></li>
+                <li class="no3 text"><span>Home</span></li>
+                <li class="no3 text"><span>Home</span></li>
+
+            </ul>
+
+        </div>
+        <div class="top2">
+            <H1 class="title">DESIGN YOUR HOUSE</H1>
+            <p class="text"> Taipei Times. Washington Post New York Times The Times.Taipei Times. </p>
+            <p class="ptext"> Washington Post New York Times TheTimes.</p>
+            <div class="wel">
+                <p class="text-1">welcome</p>
+                <p class="text-1">welcome</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
